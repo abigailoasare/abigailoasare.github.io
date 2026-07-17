@@ -1,0 +1,6 @@
+User-agent: Googlebot-Image
+Disallow: /photo.png
+
+User-agent: *
+Allow: /
+Disallow: /pic2.jpg
