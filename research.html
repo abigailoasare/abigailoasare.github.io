@@ -1,140 +1,38 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="robots" content="index, follow, noimageindex">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Research | A. O. Asare</title>
-
-  <style>
-    * { box-sizing: border-box; }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      max-width: 950px;
-      margin: 0 auto;
-      padding: 40px 30px;
-      color: #222;
-      line-height: 1.7;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-bottom: 18px;
-      margin-bottom: 60px;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .nav-name {
-      font-size: 22px;
-      font-weight: 500;
-    }
-
-    .nav-links a {
-      margin-left: 22px;
-      text-decoration: none;
-      color: #333;
-    }
-
-    .nav-links a:hover {
-      text-decoration: underline;
-    }
-
-    h1 {
-      font-size: 34px;
-      font-weight: 500;
-      margin-bottom: 35px;
-    }
-
-    ol {
-      padding-left: 25px;
-    }
-
-    li {
-      margin-bottom: 24px;
-    }
-
-    a {
-      color: #1a5fb4;
-    }
-
-    @media (max-width: 700px) {
-      nav {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-      }
-
-      .nav-links a {
-        margin-left: 0;
-        margin-right: 14px;
-      }
-    }
-  </style>
-
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-<nav>
-
-  <div class="nav-name">
-    A. O. Asare
-  </div>
-
-  <div class="nav-links">
+<header class="site-header">
+  <a class="brand" href="index.html">A. O. Asare</a>
+  <nav class="site-nav" aria-label="Main navigation">
     <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="working-papers.html">Working Papers</a>
+    <a href="research.html" aria-current="page">Research</a>
     <a href="teaching.html">Teaching</a>
-    <a href="contacts.html">Contacts</a>
-  </div>
+    <a href="contacts.html">Contact</a>
+  </nav>
+</header>
 
-</nav>
+<main class="page">
+  <h1 class="display-title">Publications</h1>
+  <ol class="publication-list">
+    <li><strong>Asare, A. O.</strong> (2026). “More Than Money: The Critical Role of Management in Educational Aid Effectiveness in Africa.” <em>The Journal of Development Studies</em>, 1–23. <a href="https://doi.org/10.1080/00220388.2026.2666164">doi:10.1080/00220388.2026.2666164</a></li>
+    <li><strong>Asare, A. O.</strong> &amp; Schürer, L. (2026). “Using Carbon Pricing Revenues to Empower Low-Income Households with Renewable Energy: Distributional Analysis for Tanzania.” <em>Ecological Economics</em>, 244, 108978. <a href="https://doi.org/10.1016/j.ecolecon.2026.108978">doi:10.1016/j.ecolecon.2026.108978</a></li>
+    <li>Asane-Otoo, E. &amp; <strong>Asare, A. O.</strong> (2024). “Energy Poverty and Subjective Wellbeing Revisited: Insights from the German Socio-Economic Panel.” <em>IAEE Energy Forum</em>, <a href="https://d3mlcsf379pjap.cloudfront.net/documents/newsletters/243Asane-Otoo.pdf">Third &amp; Fourth Quarters</a>.</li>
+  </ol>
 
-<main>
-
-<h1>Research</h1>
-
-<ol>
-
-<li>
-<strong>Asare, A. O.</strong> (2026).
-“More Than Money: The Critical Role of Management in Educational Aid Effectiveness in Africa.”
-<em>The Journal of Development Studies</em>, 1–23.
-<br>
-<a href="https://doi.org/10.1080/00220388.2026.2666164">
-doi:10.1080/00220388.2026.2666164
-</a>
-</li>
-
-<li>
-<strong>Asare, A. O.</strong> &amp; Schürer, L. (2026).
-“Using Carbon Pricing Revenues to Empower Low-Income Households with Renewable Energy:
-Distributional Analysis for Tanzania.”
-<em>Ecological Economics</em>, 244, 108978.
-<br>
-<a href="https://doi.org/10.1016/j.ecolecon.2026.108978">
-doi:10.1016/j.ecolecon.2026.108978
-</a>
-</li>
-
-<li>
-Asane-Otoo, E. &amp; <strong>Asare, A. O.</strong> (2024).
-“Energy Poverty and Subjective Well-being Revisited:
-Insights from the German Socio-Economic Panel.”
-<em>IAEE Energy Forum</em>, Third &amp; Fourth Quarters.
-</li>
-
-</ol>
+   <h1 class="display-title">Working Papers</h1>
+  <ol class="publication-list">
+    <li>Asane-Otoo, E. &amp; <strong>Asare, A. O.</strong> (2026). “The Well-Being Costs of Energy Poverty: The Role of Affective Channels.” <em>Oldenburg Discussion Papers in Economics</em>, No. 455-26.</li>
+    <li><strong>Asare, A. O.</strong> (2026). “When Does Success Spread? Evidence from Project-Level Evaluations in Africa.” <em>Oldenburg Discussion Papers in Economics</em>, No. 454-26.</li>
+    <li><strong>Asare, A. O.</strong>, Dannemann, B. C., &amp; Erkan, G. (2023). “Locust Infestations and Individual School Dropout: Evidence from Africa.” <em>Oldenburg Discussion Papers in Economics</em>, No. 446-24.</li>
+  </ol>
 
 </main>
-
 </body>
-
 </html>
