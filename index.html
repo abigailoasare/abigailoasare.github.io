@@ -4,55 +4,32 @@
   <meta charset="UTF-8">
   <meta name="robots" content="index, follow, noimageindex">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A. O. Asare</title>
-  <style>
-    body { font-family: Arial, Helvetica, sans-serif; max-width: 950px; margin: 0 auto; padding: 40px 30px; color: #222; line-height: 1.7; }
-    nav { display: flex; justify-content: space-between; align-items: center; padding-bottom: 18px; margin-bottom: 60px; border-bottom: 1px solid #ddd; }
-    .nav-name { font-size: 22px; font-weight: 500; }
-    .nav-links a { margin-left: 22px; text-decoration: none; color: #333; }
-    .nav-links a:hover { text-decoration: underline; }
-    .main { display: flex; gap: 55px; align-items: flex-start; }
-    .photo { width: 260px; max-width: 100%; height: auto; }
-    .content { max-width: 560px; }
-    h1 { font-size: 36px; font-weight: 500; margin-top: 0; }
-    a { color: #1a5fb4; }
-    @media (max-width: 700px) {
-      nav, .main { flex-direction: column; align-items: flex-start; }
-      .nav-links a { margin-left: 0; margin-right: 14px; }
-    }
-  </style>
+  <title>Abigail O. Asare</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-<nav>
-  <div class="nav-name">A. O. Asare</div>
-  <div class="nav-links">
-    <a href="index.html">Home</a>
+<header class="site-header">
+  <a class="brand" href="index.html">A. O. Asare</a>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="index.html" aria-current="page">Home</a>
     <a href="research.html">Research</a>
-    <a href="working-papers.html">Working Papers</a>
     <a href="teaching.html">Teaching</a>
-    <a href="contacts.html">Contacts</a>
-  </div>
-</nav>
+    <a href="contacts.html">Contact</a>
+  </nav>
+</header>
 
-<main class="main">
-  <img src="photo.png" alt="" class="photo">
+<main class="home-page">
+  <h1 class="home-name">Abigail O. Asare</h1>
+  <p class="welcome">Welcome to my website!</p>
 
-  <section class="content">
-    <h1>A. O. Asare</h1>
-
-    <p>
-      I am a researcher in economics. My work focuses on development economics,
-      energy economics, educational aid effectiveness, climate policy, and
-      applied microeconometrics.
-    </p>
-
-    <p>
-      My research examines how policy design, institutional quality, and economic
-      constraints shape welfare, education, energy access, and development
-      outcomes.
-    </p>
-
+  <section class="bio-grid" aria-labelledby="bio-heading">
+    <img class="portrait" src="photo.png" alt="Portrait of Abigail O. Asare">
+    <div class="bio-copy">
+      <h2 id="bio-heading" class="section-title">Bio</h2>
+      <p>I am a postdoctoral researcher in economics at <a href="https://uol.de/" target="_blank" rel="noopener">Carl von Ossietzky Universität Oldenburg</a>.</p>
+      <p>My research interests include applied development economics, environmental economics, and energy economics.</p>
+      <p>I examine how institutions, climate change, energy policies, and development interventions affect poverty, education, and well-being at the individual and household levels. Methodologically, I use applied econometric methods to address policy-relevant questions within these domains.</p>
+    </div>
   </section>
 </main>
 </body>
