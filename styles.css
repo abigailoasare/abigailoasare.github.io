@@ -1,0 +1,169 @@
+:root {
+  --red: #a40000;
+  --blue: #116b96;
+  --ink: #191919;
+  --muted: #4a4a4a;
+  --page: 1100px;
+}
+
+.main{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:70px;
+    max-width:900px;
+    margin:70px auto 0;
+}
+
+.photo{
+    width:280px;
+    flex-shrink:0;
+}
+
+
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body{
+    font-family:"Libertinus Serif", serif;
+    color:var(--text);
+    max-width:1100px;
+    margin:0 auto;
+    padding:30px;
+    line-height:1.8;
+    font-size:20px;
+}
+
+a { color: var(--blue); }
+a:hover { color: var(--red); }
+
+.site-header {
+  width: 100%;
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 22px;
+  border-top: 2px solid #d9d9d9;
+  box-shadow: 0 1px 8px rgba(0,0,0,.08);
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+}
+
+h1,h2{
+    color:var(--accent);
+    font-style:italic;
+    font-weight:700;
+}
+
+a{
+    color:var(--link);
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+
+.nav-name{
+    font-family:"Libertinus Serif", serif;
+    font-size:2rem;
+    font-weight:700;
+}
+.brand {
+  color: #222;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+}
+.site-nav { display: flex; align-items: center; gap: 28px; }
+.site-nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 15px;
+}
+.site-nav a[aria-current="page"] { color: #111; font-weight: 700; }
+.site-nav a:hover { color: var(--red); }
+
+.page {
+  width: min(var(--page), calc(100% - 48px));
+  margin: 0 auto;
+  padding: 34px 0 72px;
+}
+
+.display-title,
+.section-title {
+  color: var(--red);
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.08;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+.display-title { font-size: clamp(42px, 4.4vw, 64px); margin: 0 0 36px; }
+.section-title { font-size: clamp(36px, 3.4vw, 52px); margin: 42px 0 26px; }
+
+/* Home */
+.home-page { width: min(1040px, calc(100% - 48px)); padding-top: 22px; }
+.home-name {
+  margin: 0;
+  text-align: center;
+  font-size: clamp(34px, 3vw, 46px);
+  font-weight: 700;
+}
+.welcome {
+  margin: 92px 0 62px;
+  text-align: center;
+  color: var(--red);
+  font-size: 24px;
+  font-weight: 700;
+}
+.bio-grid {
+  display: grid;
+  grid-template-columns: 266px minmax(0, 1fr);
+  gap: 38px;
+  align-items: start;
+  max-width: 850px;
+  margin: 0 auto;
+}
+.portrait { width: 266px; height: 356px; object-fit: cover; display: block; }
+.bio-copy h2 { margin: 22px 0 12px; font-size: 44px; }
+.bio-copy p { margin: 0 0 28px; text-align: justify; }
+
+/* Research / papers */
+.publication-list { margin: 0; padding-left: 30px; }
+.publication-list li { padding-left: 4px; margin: 0 0 30px; }
+.publication-list em { font-size: 1.03em; }
+
+/* Teaching and contact */
+.narrow-page { width: min(1100px, calc(100% - 48px)); }
+.teaching-block { max-width: 760px; }
+.institution { color: var(--blue); font: 700 25px/1.35 Arial, Helvetica, sans-serif; margin: 0 0 14px; }
+.level { color: var(--red); font: italic 700 18px/1.4 Arial, Helvetica, sans-serif; text-decoration: underline; margin: 16px 0 4px; }
+.course-list { margin: 0; padding-left: 22px; list-style-type: square; }
+.course-list li { margin: 8px 0; }
+.contact-label { color: var(--red); font-style: italic; font-weight: 700; text-decoration: underline; margin-bottom: 4px; }
+.contact-list { padding-left: 22px; list-style-type: square; }
+.contact-list a { color: #111; text-decoration: none; }
+.contact-list a:hover { color: var(--red); text-decoration: underline; }
+
+@media (max-width: 760px) {
+  body { font-size: 17px; }
+  .site-header { align-items: flex-start; gap: 18px; padding: 16px 20px; }
+  .site-nav { flex-wrap: wrap; justify-content: flex-end; gap: 10px 18px; }
+  .page, .home-page, .narrow-page { width: min(100% - 32px, var(--page)); padding-top: 28px; }
+  .welcome { margin: 52px 0 38px; }
+  .bio-grid { grid-template-columns: 1fr; gap: 18px; }
+  .portrait { width: min(266px, 100%); height: auto; margin: 0 auto; }
+  .bio-copy h2 { margin-top: 8px; }
+}
+
+@media (max-width: 520px) {
+  .site-header { display: block; }
+  .site-nav { margin-top: 13px; justify-content: flex-start; }
+  .site-nav a { font-size: 14px; }
+  .display-title { margin-bottom: 28px; }
+}
+
